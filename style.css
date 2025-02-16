@@ -213,28 +213,42 @@ video {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 50;
 }
 .box {
   background-color: var(--cl1);
   border-radius: 0px 0px 20px 20px;
-  margin: 0px 10px 0px 10px;
-  height: 50px;
+  margin: -0px 10px 0px 10px;
+  height: 75px;
   width: 100px;
   transition: 0.4s;
-  z-index: 50;
+
 }
 .box:hover {
-  padding: 50px;
+  height: 100px;
 }
 #desc{
   background-color: var(--cl3);
   display: flex;
   justify-content: center;
   padding-bottom: 15vw;
+  position: relative;
+}
+#desc img{
+  width: 40%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top:-28%;
+  opacity: 0.96;
+  animation: back3_anim 15s ease-in-out infinite; 
+  filter:drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.313));
 }
 #desc p{
   margin-top: 2vw;
   width: 70%;
+  font-size: 28px;
+  z-index: 2;
 }
 #dec1{
   width: 47vw;
@@ -256,7 +270,7 @@ opacity: 0.96;
 }
 
 #events{
-  background-color: var(--cl4);
+  background-color: var(--cl1);
   width: 100%;
   height: 500px;
   margin-bottom: 100px;
@@ -303,11 +317,12 @@ opacity: 0.96;
   height: 200px;
   width: 200px;
   position: absolute;
-  animation: events_up 3s infinite linear;
+  animation: events_up 4s infinite linear;
   visibility: hidden;
   margin: 5px;
   border-radius: 15px;
-  opacity: 1;
+  opacity: 0.8;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.263));
 }
 #sec2 img{
   animation: events_down 3s infinite linear;
@@ -317,10 +332,10 @@ opacity: 0.96;
   font-size: 144px;
   font-family: "title-f2";
   font-weight: bold;
-  left: 55%;
+  left: 10%;
   color: var(--cl2);
   z-index: 50;
-  top: -20%;
+  top: 15%;
   filter: drop-shadow(10px 10px 15px black);
   
 }
@@ -364,6 +379,11 @@ opacity: 0.96;
   0%{top: 0px;}
   50%{top: -10px; }
   100%{top: 0px;}
+}
+@keyframes back3_anim {
+  0%{right: -20px;}
+  50%{right: -10%;}
+  100%{right: -20px;}
 }
 
 @keyframes title_n {
