@@ -64,7 +64,7 @@ body{
 }
 
 #header button:nth-child(2) {
-  background-color: var(--cl4);
+  background-color: var(--cl1);
   color: var(--cl3);
 }
 
