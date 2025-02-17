@@ -317,7 +317,7 @@ opacity: 0.96;
   height: 200px;
   width: 200px;
   position: absolute;
-  animation: events_up 4s infinite linear;
+  animation: events_up 3s infinite linear;
   visibility: hidden;
   margin: 5px;
   border-radius: 15px;
@@ -346,7 +346,7 @@ opacity: 0.96;
     visibility: visible;
   }
   100%{
-    top:120%;
+    top:calc(100% + 200px);
   }
 }
 @keyframes events_down {
@@ -355,7 +355,7 @@ opacity: 0.96;
     visibility: visible;
   }
   0%{
-    top:120%;
+    top:calc(100% + 200px);
   }
 }
 @keyframes viola_sc {
