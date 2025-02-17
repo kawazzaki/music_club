@@ -145,7 +145,7 @@ body{
   display: block;
   position: relative;
   height: auto;
-  left: -20%;
+  left: -100%;
   opacity: 0;
   animation: about_us_sc forwards ease-in-out;
   animation-timeline: view();
@@ -214,6 +214,12 @@ video {
   flex-wrap: wrap;
   justify-content: center;
   z-index: 50;
+  position: relative;
+  right: 25%;
+  animation: cellules_anim ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry;
+
 }
 .box {
   background-color: var(--cl1);
@@ -332,14 +338,24 @@ opacity: 0.96;
   font-size: 144px;
   font-family: "title-f2";
   font-weight: bold;
-  left: 10%;
+  left: 100%;
   color: var(--cl2);
   z-index: 50;
   top: 15%;
   filter: drop-shadow(10px 10px 15px black);
+  animation: events_title_anim ease-in-out forwards;
+  animation-timeline: view();
+  animation-range: entry;
+  opacity: 0;
   
 }
 /* Animations */
+@keyframes cellules_anim {
+  to{right: 0px;}
+}
+@keyframes events_title_anim {
+  to{left: 10%;opacity: 1;}
+}
 @keyframes events_up {
   0%{
     top:-200px;

@@ -24,12 +24,7 @@
     display: block;
   }
 
-  #about_us::after {
-    content: "";
-    width: 0;
-    height: 0;
-    background-color: transparent;
-  }
+ 
   #about_us h2 {
     font-size: 28px;
   }
@@ -100,7 +95,8 @@
   }
   #events h1{
     font-size: 64px;
-    left:1%;
+    left:100%;
+    opacity: 0;
     top:35%;
     
   }
@@ -114,5 +110,8 @@
     0%{right: -25px;}
     50%{right: -10%;}
     100%{right: -25px;}
+  }
+  @keyframes events_title_anim {
+    to{left: 1%;opacity: 1;}
   }
 }
