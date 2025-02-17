@@ -240,7 +240,7 @@ video {
   position: absolute;
   right: 0;
   top:-28%;
-  opacity: 0.96;
+  opacity: 0.2;
   animation: back3_anim 15s ease-in-out infinite; 
   filter:drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.313));
 }
