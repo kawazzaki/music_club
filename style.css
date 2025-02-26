@@ -228,6 +228,11 @@ video {
   height: 75px;
   width: 100px;
   transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cl3);
+  font-size: 28px;
 
 }
 .box:hover {
@@ -240,6 +245,7 @@ video {
   padding-bottom: 15vw;
   position: relative;
 }
+/*
 #desc img{
   width: 40%;
   height: auto;
@@ -250,6 +256,8 @@ video {
   animation: back3_anim 15s ease-in-out infinite; 
   filter:drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.313));
 }
+*/
+
 #desc p{
   margin-top: 2vw;
   width: 70%;
@@ -323,15 +331,15 @@ opacity: 0.96;
   height: 200px;
   width: 200px;
   position: absolute;
-  animation: events_up 3s infinite linear;
+  animation: events_up 8s infinite linear;
   visibility: hidden;
   margin: 5px;
   border-radius: 15px;
-  opacity: 0.8;
+  opacity: 0.4;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.263));
 }
 #sec2 img{
-  animation: events_down 3s infinite linear;
+  animation: events_down 8s infinite linear;
 }
 #events h1{
   position: absolute;
@@ -348,6 +356,21 @@ opacity: 0.96;
   animation-range: entry;
   opacity: 0;
   
+}
+#social_media{
+  justify-self: center;
+  width: 700px;
+  height: 100px;
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#social_media a i{
+  color: var(--cl1);
+  font-size: 48px;
 }
 /* Animations */
 @keyframes cellules_anim {
